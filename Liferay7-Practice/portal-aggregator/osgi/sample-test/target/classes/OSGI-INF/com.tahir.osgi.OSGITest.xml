@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.tahir.osgi.OSGITest" immediate="true">
+  <implementation class="com.tahir.osgi.OSGITest"/>
+  <service>
+    <provide interface="javax.portlet.Portlet"/>
+  </service>
+  <property name="javax.portlet.init-param.view-template" type="String" value="/views/view.jsp"/>
+  <property name="javax.portlet.security-role-ref" type="String" value="power-user,user"/>
+  <property name="javax.portlet.resource-bundle" type="String" value="content.Language"/>
+  <property name="javax.portlet.init-param.template-path" type="String" value="/"/>
+  <property name="javax.portlet.name" type="String" value="OSGITestPortlet"/>
+  <property name="com.liferay.portlet.requires-namespaced-parameters" type="String" value="false"/>
+  <property name="com.liferay.portlet.instanceable" type="String" value="true"/>
+  <property name="javax.portlet.display-name" type="String" value="sample-test Portlet"/>
+  <property name="com.liferay.portlet.display-category" type="String" value="category.tahir"/>
+</component>

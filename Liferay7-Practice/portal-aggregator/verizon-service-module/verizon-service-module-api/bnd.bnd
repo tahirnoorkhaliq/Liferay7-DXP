@@ -1,0 +1,11 @@
+Bundle-SymbolicName: verizon.service.module-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.tahir.liferaypractice.exception,\
+	com.tahir.liferaypractice.model,\
+	com.tahir.liferaypractice.service,\
+	com.tahir.liferaypractice.service.persistence
+-includeresource: META-INF/service.xml=../verizon-service-module-service/service.xml
+ -sources: true
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>portal-aggregator</artifactId>
+    <version>0.1</version>
+    <name>Portal Modules</name>
+    <packaging>pom</packaging>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>liferay-plugin-repo</id>
+            <name>Liferay Repo</name>
+            <url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>liferay-repo</id>
+            <name>Liferay Repo</name>
+            <url>https://repository.liferay.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <parent>
+        <groupId>com.tahir.liferaydxp</groupId>
+        <artifactId>liferay7-practice</artifactId>
+        <version>0.1</version>
+    </parent>
+
+    <modules>
+        <module>hooks</module>
+		<module>verizon-service-module</module>
+		<module>osgi</module>
+    <module>meeting-service-module</module>
+    <module>motogplus-service</module>
+  </modules>
+
+    <profiles>
+        <profile>
+            <id>theme-aware</id>
+            <modules>
+                <module>themes</module>
+            </modules>
+        </profile>
+    </profiles>
+
+
+
+</project>

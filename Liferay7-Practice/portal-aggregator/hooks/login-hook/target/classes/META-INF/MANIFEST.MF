@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1481200624523
+Bundle-ManifestVersion: 2
+Bundle-Name: login hook
+Bundle-SymbolicName: login.hook
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_25 (Oracle Corporation)
+Fragment-Host: com.liferay.login.web;bundle-version="1.0.3"
+Tool: Bnd-3.2.0.201605172007

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.tahir.action.TestOSGIMVCResourceCommand">
+  <implementation class="com.tahir.action.TestOSGIMVCResourceCommand"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCResourceCommand"/>
+  </service>
+  <property name="mvc.command.name" type="String" value="/test/osgi"/>
+  <property name="javax.portlet.name" type="String" value="OSGITestPortlet"/>
+</component>

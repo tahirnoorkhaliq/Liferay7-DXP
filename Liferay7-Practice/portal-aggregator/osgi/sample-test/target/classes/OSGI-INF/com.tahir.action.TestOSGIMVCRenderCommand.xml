@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.tahir.action.TestOSGIMVCRenderCommand">
+  <implementation class="com.tahir.action.TestOSGIMVCRenderCommand"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCRenderCommand"/>
+  </service>
+  <property name="mvc.command.name" type="String" value="/tahir/test"/>
+  <property name="javax.portlet.name" type="String" value="OSGITestPortlet"/>
+</component>

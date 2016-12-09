@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.tahir.action.TestCaptcha">
+  <implementation class="com.tahir.action.TestCaptcha"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCResourceCommand"/>
+  </service>
+  <property name="mvc.command.name" type="String" value="/test/Captcha"/>
+  <property name="javax.portlet.name" type="String" value="OSGITestPortlet"/>
+</component>

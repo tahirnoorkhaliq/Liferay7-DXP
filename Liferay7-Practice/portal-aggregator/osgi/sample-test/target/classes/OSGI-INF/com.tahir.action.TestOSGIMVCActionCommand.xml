@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.tahir.action.TestOSGIMVCActionCommand">
+  <implementation class="com.tahir.action.TestOSGIMVCActionCommand"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCActionCommand"/>
+  </service>
+  <property name="mvc.command.name" type="String" value="testAction"/>
+  <property name="javax.portlet.name" type="String" value="OSGITestPortlet"/>
+</component>

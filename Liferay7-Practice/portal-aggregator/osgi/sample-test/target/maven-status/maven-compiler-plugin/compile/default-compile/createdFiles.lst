@@ -1,0 +1,5 @@
+com\tahir\osgi\OSGITest.class
+com\tahir\action\TestCaptcha.class
+com\tahir\action\TestOSGIMVCRenderCommand.class
+com\tahir\action\TestOSGIMVCResourceCommand.class
+com\tahir\action\TestOSGIMVCActionCommand.class

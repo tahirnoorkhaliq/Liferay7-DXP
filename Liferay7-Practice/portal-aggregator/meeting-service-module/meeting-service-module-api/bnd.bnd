@@ -1,0 +1,9 @@
+Bundle-Name: meeting-service-module-api
+Bundle-SymbolicName: com.tahir.meeting.api
+Bundle-Version: 1.0-SNAPSHOT
+Export-Package:\
+	com.tahir.meeting.exception,\
+	com.tahir.meeting.model,\
+	com.tahir.meeting.service,\
+	com.tahir.meeting.service.persistence
+-includeresource: META-INF/service.xml=../meeting-service-module-service/service.xml

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1481200644898
+Bundle-ManifestVersion: 2
+Bundle-Name: Liferay-fire-on
+Bundle-SymbolicName: liferay.fire.on
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_25 (Oracle Corporation)
+Import-Package: com.liferay.portal.kernel.log;version="[7.0,8)",com.li
+ feray.portal.kernel.model;version="[1.0,2)",com.liferay.portal.kernel
+ .portlet.bridges.mvc;version="[1.0,2)",com.liferay.portal.kernel.serv
+ ice;version="[1.0,2)",com.liferay.portal.kernel.theme;version="[1.0,2
+ )",javax.portlet;version="[2.0,3)"
+Private-Package: com.tahir.fireon.portlet,content
+Provide-Capability: osgi.service;objectClass:List<String>="javax.portl
+ et.Portlet"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.tahir.fireon.portlet.OSGIFireOnPortlet
+ .xml
+Tool: Bnd-3.2.0.201605172007

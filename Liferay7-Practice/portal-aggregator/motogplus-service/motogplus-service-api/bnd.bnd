@@ -1,0 +1,9 @@
+Bundle-Name: motogplus-service-api
+Bundle-SymbolicName: com.tahir.motogplusservice.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.tahir.motogplusservice.exception,\
+	com.tahir.motogplusservice.model,\
+	com.tahir.motogplusservice.service,\
+	com.tahir.motogplusservice.service.persistence
+-includeresource: META-INF/service.xml=../motogplus-service-service/service.xml

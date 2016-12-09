@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.liferay.blade.samples.strutsportletaction.BladePortletAction">
+  <implementation class="com.liferay.blade.samples.strutsportletaction.BladePortletAction"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCActionCommand"/>
+  </service>
+  <reference name="mvcActionCommand" interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCActionCommand" target="(&amp;(mvc.command.name=/login/login)(javax.portlet.name=com_liferay_login_web_portlet_LoginPortlet))" field="mvcActionCommand"/>
+  <property name="mvc.command.name" type="String" value="/login/login"/>
+  <property name="service.ranking" type="Integer" value="100"/>
+  <property name="javax.portlet.name" type="String" value="com_liferay_login_web_portlet_LoginPortlet"/>
+</scr:component>

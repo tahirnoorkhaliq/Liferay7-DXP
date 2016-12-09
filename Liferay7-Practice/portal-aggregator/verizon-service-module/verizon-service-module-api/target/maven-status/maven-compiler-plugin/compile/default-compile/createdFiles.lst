@@ -1,0 +1,14 @@
+com\tahir\liferaypractice\model\TestServiceModuleWrapper.class
+com\tahir\liferaypractice\exception\NoSuchTestServiceModuleException.class
+com\tahir\liferaypractice\service\persistence\TestServiceModulePersistence.class
+com\tahir\liferaypractice\service\TestServiceModuleService.class
+com\tahir\liferaypractice\model\TestServiceModule.class
+com\tahir\liferaypractice\service\TestServiceModuleLocalServiceWrapper.class
+com\tahir\liferaypractice\model\TestServiceModuleSoap.class
+com\tahir\liferaypractice\model\TestServiceModuleModel.class
+com\tahir\liferaypractice\service\TestServiceModuleServiceWrapper.class
+com\tahir\liferaypractice\model\TestServiceModule$1.class
+com\tahir\liferaypractice\service\persistence\TestServiceModuleUtil.class
+com\tahir\liferaypractice\service\TestServiceModuleServiceUtil.class
+com\tahir\liferaypractice\service\TestServiceModuleLocalServiceUtil.class
+com\tahir\liferaypractice\service\TestServiceModuleLocalService.class

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1481200639702
+Bundle-ManifestVersion: 2
+Bundle-Name: Login Pre Action
+Bundle-SymbolicName: login-pre-action
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_25 (Oracle Corporation)
+Import-Package: com.liferay.portal.kernel.events;version="[6.3,7)"
+Private-Package: com.tahir.hook
+Provide-Capability: osgi.service;objectClass:List<String>="com.liferay
+ .portal.kernel.events.LifecycleAction"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.tahir.hook.LoginPreAction.xml
+Tool: Bnd-3.2.0.201605172007

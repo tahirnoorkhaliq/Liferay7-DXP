@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.tahir.liferayaction.SampleTestAction">
+  <implementation class="com.tahir.liferayaction.SampleTestAction"/>
+  <service>
+    <provide interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCActionCommand"/>
+  </service>
+  <reference name="mvcActionCommand" interface="com.liferay.portal.kernel.portlet.bridges.mvc.MVCActionCommand" target="(&amp;(mvc.command.name=testAction)(javax.portlet.name=OSGITestPortlet)(component.name=com.tahir.action.TestOSGIMVCActionCommand))" field="mvcActionCommand"/>
+  <property name="mvc.command.name" type="String" value="testAction"/>
+  <property name="service.ranking" type="Integer" value="600"/>
+  <property name="javax.portlet.name" type="String" value="OSGITestPortlet"/>
+</scr:component>
