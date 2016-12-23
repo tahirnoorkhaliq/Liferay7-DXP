@@ -1,39 +1,41 @@
 <?xml version="1.0"?>
 
 <model-hints>
-	<model name="com.tahir.motogplusservice.model.Category">
-		<field name="uuid" type="String" />
-		<field name="categoryId" type="long" />
-		<field name="categoryName" type="String" />
-	</model>
-	<model name="com.tahir.motogplusservice.model.Industry">
-		<field name="uuid" type="String" />
-		<field name="industryId" type="long" />
-		<field name="industryName" type="String" />
-	</model>
-	<model name="com.tahir.motogplusservice.model.Khaliq">
-		<field name="uuid" type="String" />
-		<field name="khaliqId" type="long" />
-		<field name="groupId" type="long" />
-		<field name="companyId" type="long" />
-		<field name="userId" type="long" />
-		<field name="userName" type="String" />
-		<field name="createDate" type="Date" />
-		<field name="modifiedDate" type="Date" />
-		<field name="name" type="String" />
-		<field name="designation" type="String" />
-		<field name="dob" type="Date" />
-	</model>
-	<model name="com.tahir.motogplusservice.model.KhaliqCategoryMapping">
-		<field name="uuid" type="String" />
-		<field name="khaliqCategoryMappingId" type="long" />
-		<field name="khaliqId" type="long" />
-		<field name="categoryId" type="long" />
-	</model>
-	<model name="com.tahir.motogplusservice.model.KhaliqIndustryMapping">
-		<field name="uuid" type="String" />
-		<field name="khaliqIndustryMappingId" type="long" />
-		<field name="khaliqId" type="long" />
-		<field name="industryId" type="long" />
-	</model>
+    <model name="com.tahir.motogplusservice.model.Category">
+        <field name="uuid" type="String"/>
+        <field name="categoryId" type="long"/>
+        <field name="categoryName" type="String"/>
+    </model>
+    <model name="com.tahir.motogplusservice.model.Industry">
+        <field name="uuid" type="String"/>
+        <field name="industryId" type="long"/>
+        <field name="industryName" type="String"/>
+    </model>
+    <model name="com.tahir.motogplusservice.model.Khaliq">
+        <field name="uuid" type="String"/>
+        <field name="khaliqId" type="long"/>
+        <field name="groupId" type="long"/>
+        <field name="companyId" type="long"/>
+        <field name="userId" type="long"/>
+        <field name="userName" type="String"/>
+        <field name="createDate" type="Date"/>
+        <field name="modifiedDate" type="Date"/>
+        <field name="name" type="String">
+            <hint name="max-length">4000</hint>
+        </field>
+        <field name="designation" type="String"/>
+        <field name="dob" type="Date"/>
+    </model>
+    <model name="com.tahir.motogplusservice.model.KhaliqCategoryMapping">
+        <field name="uuid" type="String"/>
+        <field name="khaliqCategoryMappingId" type="long"/>
+        <field name="khaliqId" type="long"/>
+        <field name="categoryId" type="long"/>
+    </model>
+    <model name="com.tahir.motogplusservice.model.KhaliqIndustryMapping">
+        <field name="uuid" type="String"/>
+        <field name="khaliqIndustryMappingId" type="long"/>
+        <field name="khaliqId" type="long"/>
+        <field name="industryId" type="long"/>
+    </model>
 </model-hints>
