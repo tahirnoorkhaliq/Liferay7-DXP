@@ -1,51 +1,71 @@
 <?xml version="1.0"?>
-<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN"
+        "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
 
 <service-builder package-path="com.tahir.motogplusservice">
-	<namespace>moto</namespace>
-	<author>TahirNoor</author>
-	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
-	<entity local-service="true" name="Khaliq" remote-service="true" uuid="true">
+    <namespace>moto</namespace>
+    <author>TahirNoor</author>
+    <!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+    <entity local-service="true" name="Khaliq" remote-service="true" uuid="true">
 
-		<!-- PK fields -->
+        <!-- PK fields -->
 
-		<column name="khaliqId" primary="true" type="long" />
+        <column name="khaliqId" primary="true" type="long"/>
 
-		<!-- Group instance -->
+        <!-- Group instance -->
 
-		<column name="groupId" type="long" />
+        <column name="groupId" type="long"/>
 
-		<!-- Audit fields -->
+        <!-- Audit fields -->
 
-		<column name="companyId" type="long" />
-		<column name="userId" type="long" />
-		<column name="userName" type="String" />
-		<column name="createDate" type="Date" />
-		<column name="modifiedDate" type="Date" />
+        <column name="companyId" type="long"/>
+        <column name="userId" type="long"/>
+        <column name="userName" type="String"/>
+        <column name="createDate" type="Date"/>
+        <column name="modifiedDate" type="Date"/>
 
-		<!-- Other fields -->
+        <!-- Other fields -->
 
-		<column name="name" type="String" />
-		<column name="designation" type="String" />
-		<column name="dob" type="Date" />
-
-
-		<!-- Order -->
-
-		<!--<order by="asc">
-			<order-column name="field1" />
-		</order>-->
-
-		<!-- Finder methods -->
-		<finder name="khaliqName" return-type="Khaliq">
-			<finder-column name="name" />
-		</finder>
+        <column name="name" type="String"/>
+        <column name="designation" type="String"/>
+        <column name="dob" type="Date"/>
 
 
+        <!-- Order -->
 
-		<!-- References -->
+        <!--<order by="asc">
+            <order-column name="field1" />
+        </order>-->
 
-		<!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
-		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
-	</entity>
+        <!-- Finder methods -->
+        <finder name="khaliqName" return-type="Khaliq">
+            <finder-column name="name"/>
+        </finder>
+
+
+        <!-- References -->
+
+        <!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+        <reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
+    </entity>
+    <entity local-service="true" name="KhaliqCategoryMapping" remote-service="true" uuid="true">
+        <column name="khaliqCategoryMappingId" primary="true" type="long"/>
+        <column name="khaliqId" type="long"/>
+        <column name="categoryId" type="long"/>
+    </entity>
+    <entity local-service="true" name="Category" remote-service="true" uuid="true">
+        <column name="categoryId" type="long" primary="true"/>
+        <column name="categoryName" type="String"/>
+    </entity>
+    <entity local-service="true" name="KhaliqIndustryMapping" remote-service="true" uuid="true">
+        <column name="khaliqIndustryMappingId" primary="true" type="long"/>
+        <column name="khaliqId" type="long"/>
+        <column name="industryId" type="long"/>
+    </entity>
+    <entity local-service="true" name="Industry" remote-service="true" uuid="true">
+        <column name="industryId" type="long" primary="true" />
+        <column name="industryName" type="String"/>
+
+    </entity>
+
 </service-builder>
