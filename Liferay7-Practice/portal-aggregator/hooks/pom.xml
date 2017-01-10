@@ -20,6 +20,7 @@
 		<module>login-pre-action</module>
         <module>sampletest-action-hook</module>
 	     <module>login-post-action</module>
+	    <module>user-service-hook</module>
     </modules>
     <build>
         <plugins>
