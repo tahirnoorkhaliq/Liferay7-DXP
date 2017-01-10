@@ -1,0 +1,3 @@
+Bundle-Name: user-service-hook
+Bundle-SymbolicName: com.tahir.hook
+Bundle-Version: 1.0-SNAPSHOT
