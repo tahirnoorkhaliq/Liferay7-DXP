@@ -30,7 +30,9 @@ import com.liferay.portal.kernel.util.WebKeys;
 			"javax.portlet.init-param.view-template=/views/view.jsp",
 			"javax.portlet.resource-bundle=content.Language",
 			"javax.portlet.security-role-ref=power-user,user",
-			"com.liferay.portlet.requires-namespaced-parameters=false"
+			"com.liferay.portlet.requires-namespaced-parameters=false",
+                	"com.liferay.portlet.header-portlet-css=/css/test.css",
+                	"com.liferay.portlet.footer-portlet-javascript=/js/test.js"
 		},
 		service = Portlet.class
 	)
