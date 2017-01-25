@@ -17,8 +17,7 @@ import java.io.IOException;
 @Component(
         immediate = true,
         property = {
-                "javax.portlet.name=OSGITestPortlet",
-                "mvc.command.name=testfilterAction"
+                "javax.portlet.name=OSGITestPortlet",               
         },
         service = PortletFilter.class
 )
