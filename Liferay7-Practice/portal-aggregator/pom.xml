@@ -36,10 +36,11 @@
 
     <modules>
         <module>hooks</module>
-		<module>verizon-service-module</module>
-		<module>osgi</module>
-    <module>meeting-service-module</module>
-    <module>motogplus-service</module>
+	<module>verizon-service-module</module>
+	<module>osgi</module>
+    	<module>meeting-service-module</module>
+    	<module>motogplus-service</module>
+	<module>filters</module>
   </modules>
 
     <profiles>
