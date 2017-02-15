@@ -14,7 +14,7 @@
 
 package com.tahir.liferaymoin;
 
-import com.liferay.portal.kernel.util.ReleaseInfo;
+//import com.liferay.portal.kernel.util.ReleaseInfo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,7 +27,7 @@ public class PortletViewController {
 
 	@RenderMapping
 	public String question(Model model) {
-		model.addAttribute("releaseInfo", ReleaseInfo.getReleaseInfo());
+		//model.addAttribute("releaseInfo", ReleaseInfo.getReleaseInfo());
 
 		return "moin-test-spring/view";
 	}
