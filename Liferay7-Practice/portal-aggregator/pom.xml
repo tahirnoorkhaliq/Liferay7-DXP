@@ -41,6 +41,7 @@
     	<module>meeting-service-module</module>
     	<module>motogplus-service</module>
 	<module>filters</module>
+	     <module>spring-portlets</module>
   </modules>
 
     <profiles>
