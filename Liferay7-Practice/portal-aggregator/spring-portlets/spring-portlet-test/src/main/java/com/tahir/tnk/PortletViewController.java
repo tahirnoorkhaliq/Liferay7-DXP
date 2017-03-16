@@ -16,20 +16,39 @@ package com.tahir.tnk;
 
 import com.liferay.portal.kernel.util.ReleaseInfo;
 
+import com.tahir.motogplusservice.model.Khaliq;
+import com.tahir.motogplusservice.service.KhaliqLocalService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.portlet.bind.annotation.RenderMapping;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Controller
 @RequestMapping("VIEW")
 public class PortletViewController {
 
-	@RenderMapping
-	public String question(Model model) {
-		model.addAttribute("releaseInfo", ReleaseInfo.getReleaseInfo());
-
-		return "spring-portlet-test/view";
+	MotoGKhaliqServiceTracker khaliqServiceTracker=null;
+	@PostConstruct
+	public void init() {
+		 khaliqServiceTracker = new MotoGKhaliqServiceTracker(this);
+		khaliqServiceTracker.open();
 	}
 
+	@RenderMapping
+	public String question(Model model) {
+
+		if (!khaliqServiceTracker.isEmpty()) {
+			KhaliqLocalService khaliqLocalService= khaliqServiceTracker.getService();
+			Khaliq khaliq=khaliqLocalService.addInToKhaliq("tash","SE",null,"goood");
+			System.out.println(khaliq.getName());
+		}
+		return "spring-portlet-test/view";
+	}
+	@PreDestroy
+	public void destroy() {
+		khaliqServiceTracker.close();
+	}
 }
